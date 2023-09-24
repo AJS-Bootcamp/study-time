@@ -13,6 +13,9 @@ function Navigation() {
         <li>
           <NavLink to="/study">Study</NavLink>
         </li>
+        <li>
+          <NavLink to="/ContactPage">Contact Us</NavLink>
+        </li>
       </ul>
     </nav>
   );

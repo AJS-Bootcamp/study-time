@@ -1,5 +1,3 @@
-// import React from "react";
-
 // import Navigation from "./Navigation";
 
 // function Footer() {
@@ -11,8 +9,6 @@
 //         optimize your learning experience.
 //       </h3>
 
-//       <AboutPage />
-//       <ContactPage />
 //       <h5>Your Study App was build by Austin, Jocelyn, Sylvia.</h5>
 //     </div>
 //   );
@@ -46,13 +42,12 @@ const Footer = () => {
                             <li>
                                 <Link to='/contact'>Contact Us</Link>
                             </li>
-
-                             </ul>
+                        </ul>
                     </Col>
                     <Col xs='6' sm='3' className='text-center'>
                         <h5>Social</h5>
                         <a
-                            className='btn btn-social-icon btn-instagram'
+                            className='btn btn-social-icon btn-instagram' 
                             href='http://instagram.com/'
                         >
                             <i className='fa fa-instagram' />

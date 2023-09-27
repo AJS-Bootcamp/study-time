@@ -1,7 +1,13 @@
-import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
 
 function Homepage() {
-  return <div>Homepage</div>;
+  return (
+    <div>
+      <Sidebar />
+      <div>Homepage</div>
+      <div>Featured Video</div>
+    </div>
+  ) 
 }
 
 export default Homepage;

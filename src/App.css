@@ -16,7 +16,7 @@ h3,
 }
 
 h2 {
-    color: #3046c5;
+   text-align: center;
 }
 
 .card-img-overlay .card-title {
@@ -31,9 +31,10 @@ h2 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#cec8ff, white);
-    padding: 20px 0;
-    margin-top: 2rem;
+  background-color: #0d0d0d;
+  background-image: linear-gradient(to right, #a8a7a9, #4f5264 );
+  margin-bottom: 2rem;
+  min-height: 8rem;
 }
 
 .navbar-brand {
@@ -82,11 +83,14 @@ h2 {
     padding: 10px 20px;
     font-weight: bold;
     background-image: linear-gradient(to left, #a8a7a9, #4f5264 );
+    color: #faeded; /* Darker text color JUST ADDED */  
 
   }
   
   .header-footer .logo {
     font-size: 24px;
+    color: #faeded; /* Darker text color JUST ADDED */
+
   }
   
   .header-footer .social-media {
@@ -98,7 +102,9 @@ h2 {
   .footer-links a {
     text-decoration: none;
     font-size: 18px;
-    color: #333; /* Darker text color */
+  /*color: #333; /* Darker text color */
+    color: #faeded; /* Darker text color JUST ADDED */
+
   }
   
   /* Header and Footer */
@@ -125,6 +131,8 @@ h2 {
   .navbar a, .footer-links a {
     text-decoration: none;
     color: #333; /* Darker text color */
+    transition: color 0.3s, text-decoration 0.3s; /* Add smooth transitions JUST ADDED*/
+
   }
   
   /* Add blue color and underline on hover */
@@ -132,4 +140,22 @@ h2 {
     color: #007bff; /* Blue color */
     text-decoration: underline;
   }
+
+  .youtube-videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .youtube-video {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .strategy-explanation {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+ 
   

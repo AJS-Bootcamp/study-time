@@ -1,4 +1,5 @@
 import YouTubeVideos from "../components/YouTubeVideos";
+import Timer from '../components/Timer';
 
 const Study = () => {
   return (
@@ -31,8 +32,8 @@ const Study = () => {
           videoId="tkm0TNFzIeg"
           strategyExplanation="The Feyman Technique is a study method that involves explaining a topic in simple terms as if teaching it to someone else. This process helps to indentify gaps in your understanding."
         />
-
       </div>
+      <Timer /> {/* Include the Timer component within the Study component */}
     </div>
   );
 };

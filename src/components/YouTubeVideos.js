@@ -1,9 +1,9 @@
-import YouTube from 'react-youtube';
+import YouTube from "react-youtube";
 
-const YouTubeVideos = ({ videoId, strategyExplanation }) => {
+const YouTubeVideo = ({ videoId, strategyExplanation }) => {
   const opts = {
-    height: '350',
-    width: '550',
+    height: "350",
+    width: "550",
   };
 
   return (
@@ -14,4 +14,4 @@ const YouTubeVideos = ({ videoId, strategyExplanation }) => {
   );
 };
 
-export default YouTubeVideos;
+export default YouTubeVideo;

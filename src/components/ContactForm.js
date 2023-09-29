@@ -8,15 +8,7 @@ const ContactForm = () => {
     console.log("in JSON format:", JSON.stringify(values));
     resetForm();
 
-    //ErrorMessage is a component from formik
-    //it will display the error message if the field is empty or not what we asked for
-    // const validateContactForm = (values) => {
-    //     const errors = {phoneNum: `That's not your real phone number`, email: ''};
-    //     return errors;
-
-    //   };
-    //but that is not the best way to do it, we can use Yup to validate the form cause no matter what you put it will throw a message error
-    //create a new file validadeContactForm.js in utils folder
+    alert("Thank you for your feedback!");
   };
 
   return (
@@ -62,7 +54,7 @@ const ContactForm = () => {
             </ErrorMessage>
           </Col>
         </FormGroup>
-        
+
         <FormGroup row>
           <Label htmlFor="email" md="2">
             Email
@@ -79,7 +71,7 @@ const ContactForm = () => {
             </ErrorMessage>
           </Col>
         </FormGroup>
-        
+
         <FormGroup row>
           <Label htmlFor="feedback" md="2">
             Your Feedback

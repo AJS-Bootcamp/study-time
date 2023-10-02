@@ -7,18 +7,18 @@ function Homepage() {
   const [randomVideo] = useState(getRandomVideo());
 
   return (
-    <Container>
+    <Container fluid>
       <Row className="row-content">
-        <Col sm="6">
+        <Col sm="3">
           <Sidebar />
         </Col>
 
-        <Col sm="6">
+        <Col sm="9">
           <h3>Our recommendation</h3>
           {randomVideo && (
             <iframe
               width="100%"
-              height="315"
+              height="500vh"
               src={`https://www.youtube.com/embed/${randomVideo.id}`}
               title={randomVideo.title}
               frameBorder="01"

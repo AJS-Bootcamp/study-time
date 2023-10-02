@@ -1,4 +1,4 @@
-import { Col, Row, Container } from "reactstrap";
+import {  Row, Container } from "reactstrap";
 // import SubHeader from "../components/SubHeader";
 // import PartnersList from "../features/partners/PartnersList";
 

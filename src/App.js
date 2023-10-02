@@ -7,7 +7,6 @@ import "./App.css";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import Timer from "./components/Timer"; 
-import Sidebar from "./components/Sidebar";
 
 
 function App() {

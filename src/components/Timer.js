@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './Timer.css';
+import React, { useState, useEffect } from "react";
+import "./Timer.css";
 
 function Timer() {
   const [seconds, setSeconds] = useState(0);
@@ -57,7 +57,10 @@ function Timer() {
   const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const secs = time % 60;
-    return `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    return `${String(minutes).padStart(2, "0")}:${String(secs).padStart(
+      2,
+      "0"
+    )}`;
   };
 
   // Calculate the progress percentage
@@ -75,20 +78,28 @@ function Timer() {
         ></div>
       </div>
       <div className="timer-controls">
-      {isRunning ? (
-          <button className="timer-button" onClick={pauseTimer}>Pause</button>
+        {isRunning ? (
+          <button className="timer-button" onClick={pauseTimer}>
+            Pause
+          </button>
         ) : (
-          <button className="timer-button" onClick={startTimer}>Start</button>
+          <button className="timer-button" onClick={startTimer}>
+            Start
+          </button>
         )}
-        <button className="timer-button" onClick={stopTimer}>Stop</button>
-        <button className="timer-button" onClick={resetTimer}>Reset</button>
+        <button className="timer-button" onClick={stopTimer}>
+          Stop
+        </button>
+        <button className="timer-button" onClick={resetTimer}>
+          Reset
+        </button>
         <input
           type="number"
           placeholder="Set Timer (seconds)"
           onChange={(e) => adjustTimer(parseInt(e.target.value))}
         />
       </div>
-  {isPaused && (
+      {isPaused && (
         <div className="paused-text">
           Timer paused at {formatTime(pausedSeconds)}.
           <button onClick={resumeTimer}>Resume</button>

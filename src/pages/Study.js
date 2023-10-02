@@ -1,5 +1,5 @@
 import YouTubeVideo from "../components/YouTubeVideos";
-import Timer from "../components/Timer";
+// import Timer from "../components/Timer";
 import { useState } from "react";
 
 const videosList = [
@@ -51,7 +51,7 @@ const Study = () => {
           />
         ))}
       </div>
-      <Timer /> {/* Include the Timer component within the Study component */}
+      {/* <Timer /> Include the Timer component within the Study component */}
     </div>
   );
 };

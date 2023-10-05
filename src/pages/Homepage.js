@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Sidebar from "../components/Sidebar";
 import { getRandomVideo } from "./Study";
+import Loading from "../components/Loading";
+import YouTubeVideo from "../components/YouTubeVideos";
 
 function Homepage() {
-  const [randomVideo] = useState(getRandomVideo());
+  const [randomVideo, setRandomVideo] = useState(null);
+
+  useEffect(() => {
+    const fetchRandomVideo = async () => {
+      const video = await getRandomVideo();
+      setTimeout(() => {
+        setRandomVideo(video);
+      }, 1000); // delay time in milliseconds (1000ms = 1 second)
+    };
+
+    fetchRandomVideo();
+  }, []);
 
   return (
     <Container fluid>
@@ -13,18 +26,31 @@ function Homepage() {
           <Sidebar />
         </Col>
 
-        <Col sm="9">
+        <Col sm="9" rowspan="2">
           <h3>Our recommendation</h3>
-          {randomVideo && (
-            <iframe
-              width="100%"
-              height="500vh"
-              src={`https://www.youtube.com/embed/${randomVideo.id}`}
-              title={randomVideo.title}
-              frameBorder="01"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            />
-          )}
+          <div
+            className="d-flex justify-content-center align-items-center"
+            style={{ height: "50vh", width: "100%" }}
+          >
+            <div style={{ height: "50vh", width: "100vh" }}>
+              {randomVideo ? (
+                // <iframe
+                // width="100%"
+                // height="100%"
+                //   src={`https://www.youtube.com/embed/${randomVideo.id}`}
+                //   title={randomVideo.title}
+                //   frameBorder="01"
+                //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                // />
+                <YouTubeVideo
+                  videoId={randomVideo.id}
+                  strategyExplanation={randomVideo.explanation}
+                />
+              ) : (
+                <Loading /> // You can replace this with a loading spinner or any placeholder you prefer
+              )}
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>

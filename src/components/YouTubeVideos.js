@@ -1,23 +1,23 @@
 import YouTube from "react-youtube";
-import { Container, Row, Col } from "reactstrap";
 
 const YouTubeVideo = ({ videoId, strategyExplanation }) => {
   const opts = {
-    height: "550",
-    width: "750",
+    height: "100%",
+    width: "100%",
   };
 
   return (
-    <Container fluid>
-      <Row>
-        <Col>
-          <div className="youtube-video">
-            <YouTube videoId={videoId} opts={opts} />
-            <p className="strategy-explanation">{strategyExplanation}</p>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+    <div className="youtube-video">
+      <YouTube
+        videoId={videoId}
+        style={{ width: "70vw", height: "40vw" }}
+        opts={opts}
+      />
+      {/* if strategyExplanation != null then show strategy-explanation*/}
+      {strategyExplanation ? (
+        <p className="strategy-explanation">{strategyExplanation}</p>
+      ) : null}
+    </div>
   );
 };
 

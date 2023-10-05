@@ -1,32 +1,37 @@
-import {  Row, Container } from "reactstrap";
-// import SubHeader from "../components/SubHeader";
-// import PartnersList from "../features/partners/PartnersList";
-
-// import styles from "../../src/about.module.css";
-
-import studyImage from "../app/assets/img/study3.png";
+import { Row, Container } from "reactstrap";
+import LogoAJS from "../app/assets/img/lightAJS.png";
+import studyImage from "../app/assets/img/study1.png";
 
 const AboutPage = () => {
+  const myStyle = {
+    backgroundImage: `url(${studyImage})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
   return (
-    <Container>
-      {/* <SubHeader current="About Us" /> */}
-      <Row>
-        <h3>About us</h3>
-      </Row>
+    <Container style={myStyle}>
+      <div class="d-flex flex-column gap-2 py-5 align-items-center  ">
+        <h3 class="font-weight-bold p-2 bg-light bg-opacity-50 text-dark">
+          About Us
+        </h3>
 
-      <Row clasName="row-content">
-        <img src={studyImage} alt="study" />
-        <h3>
+        <img
+          class="p-2 bg-light bg-opacity-50 "
+          style={{ height: "200px", width: "300px" }}
+          src={LogoAJS}
+          alt="Logo AJS"
+        />
+        <h3 class="p-2 bg-light bg-opacity-50 text-dark">
           Determine to discover effective methods to enhance your study skills
           and optimize your learning experience.
         </h3>
-        <p>
+        <p class="p-2 bg-light bg-opacity-50 text-dark">
           "As former students, our mission is to empower individuals to unlock
           their full potential by drawing upon our own experiences and providing
           them with the knowledge and tools needed to master effective study
           techniques and elevate their learning journey."
         </p>
-      </Row>
+      </div>
     </Container>
   );
 };

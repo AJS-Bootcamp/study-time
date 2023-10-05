@@ -26,26 +26,15 @@ function Homepage() {
           <Sidebar />
         </Col>
 
-        <Col sm="9" rowspan="2">
-          <h3>Our recommendation</h3>
+        <Col sm="9">
+          <h3>Our Recommendation</h3>
           <div
             className="d-flex justify-content-center align-items-center"
             style={{ height: "50vh", width: "100%" }}
           >
             <div style={{ height: "50vh", width: "100vh" }}>
               {randomVideo ? (
-                // <iframe
-                // width="100%"
-                // height="100%"
-                //   src={`https://www.youtube.com/embed/${randomVideo.id}`}
-                //   title={randomVideo.title}
-                //   frameBorder="01"
-                //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                // />
-                <YouTubeVideo
-                  videoId={randomVideo.id}
-                  strategyExplanation={randomVideo.explanation}
-                />
+                <YouTubeVideo videoId={randomVideo.id} />
               ) : (
                 <Loading /> // You can replace this with a loading spinner or any placeholder you prefer
               )}

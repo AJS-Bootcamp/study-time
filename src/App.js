@@ -6,15 +6,15 @@ import Header from "./components/Header";
 import "./App.css";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
-import Timer from "./components/Timer"; 
-
+import Timer from "./components/Timer";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/timer" element={<Timer />} /> {/* Define the route for the Timer component */}
+        <Route path="/timer" element={<Timer />} />{" "}
+        {/* Define the route for the Timer component */}
         <Route path="/" element={<Homepage />} />
         <Route path="Study" element={<Study />} />
         <Route path="AboutPage" element={<AboutPage />} />

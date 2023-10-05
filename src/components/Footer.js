@@ -1,91 +1,51 @@
-// import Navigation from "./Navigation";
-
-// function Footer() {
-//   return (
-//     <div>
-//       <h1>AJS</h1>
-//       <h3>
-//         Determine to discover effective methods to enhance your study skills and
-//         optimize your learning experience.
-//       </h3>
-
-//       <h5>Your Study App was build by Austin, Jocelyn, Sylvia.</h5>
-//     </div>
-//   );
-// }
-
-// export default Footer;
-
-import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
+import React from "react";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
-    <footer className="site-footer">
-      <Container>
-        <Row>
-          <Col xs={{ size: 4, offset: 1 }} sm="2">
-            <h5>Links</h5>
-            <ul className="list-unstyled">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
+    <div>
+      <footer className="bg-dark text-center text-white position-fixed bottom-0 w-100 ">
+        {/* <!-- Grid container --> */}
+        <div className="container p-4 pb-0">
+          {/* <!-- Section: Social media --> */}
+          <section className="mb-4">
+            {/* <!-- Github --> */}
+            <SocialIcon
+              className="social-icon"
+              url="https://github.com/AJS-Bootcamp/study-time"
+            />
+            {/* <!-- Twitter --> */}
+            <SocialIcon url="https://twitter.com" />
+            {/* <!-- Linkedin --> */}
+            <SocialIcon url="https://www.linkedin.com" />
+            {/* <!-- Facebook --> */}
+            <SocialIcon url="https://www.facebook.com" />
+            {/* <!-- Discord --> */}
+            <SocialIcon url="https://discord.com" />
+            {/* <!-- Instagram --> */}
+            <SocialIcon url="https://instagram.com" />
+            {/* <!-- Google --> */}
+            <SocialIcon url="https://google.com" />
+            {/* <!-- Reddit --> */}
+            <SocialIcon url="https://reddit.com" />
+          </section>
+          {/* <!-- Section: Social media --> */}
+        </div>
+        {/* <!-- Grid container --> */}
 
-              <li>
-                <Link to="/Study">Study</Link>
-              </li>
-
-              <li>
-                <Link to="/AboutPage">About Us</Link>
-              </li>
-              <li>
-                <Link to="/ContactPage">Contact Us</Link>
-              </li>
-            </ul>
-          </Col>
-          <Col xs="6" sm="3" className="text-center">
-            <h5>Social</h5>
-            <a
-              className="btn btn-social-icon btn-instagram"
-              href="http://instagram.com/"
-            >
-              <i className="fa fa-instagram" />
-            </a>{" "}
-            <a
-              className="btn btn-social-icon btn-facebook"
-              href="http://www.facebook.com/"
-            >
-              <i className="fa fa-facebook" />
-            </a>{" "}
-            <a
-              className="btn btn-social-icon btn-twitter"
-              href="http://twitter.com/"
-            >
-              <i className="fa fa-twitter" />
-            </a>{" "}
-            <a
-              className="btn btn-social-icon btn-google"
-              href="http://youtube.com/"
-            >
-              <i className="fa fa-youtube" />
-            </a>
-          </Col>
-          <Col sm="4" className="text-center">
-            <a role="button" className="btn btn-link" href="tel:+12065551234">
-              <i className="fa fa-phone" /> 1-234-567-8910
-            </a>
-            <br />
-            <a
-              role="button"
-              className="btn btn-link"
-              href="mailto:notreal@notreal.co"
-            >
-              <i className="fa fa-envelope-o" /> ajs@studytime.co
-            </a>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
+        {/* <!-- Copyright --> */}
+        <div
+          className="text-center p-3"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          © 2023 Copyright:
+          <a className="text-white" href="https://mdbootstrap.com/">
+            Austin, Jocelyn & Sylvia
+          </a>
+        </div>
+        {/* <!-- Copyright --> */}
+      </footer>
+    </div>
   );
 };
 

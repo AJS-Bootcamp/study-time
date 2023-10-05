@@ -1,6 +1,5 @@
 import YouTubeVideo from "../components/YouTubeVideos";
-// import Timer from "../components/Timer";
-import { useState } from "react";
+
 import { Container } from "reactstrap";
 
 const videosList = [
@@ -45,15 +44,15 @@ const Study = () => {
     <div>
       <h2>Study Strategies</h2>
       <Container fluid>
-      <div className="youtube-videos-container">
-        {videosList.map((video, index) => (
-          <YouTubeVideo
-            videoId={video.id}
-            strategyExplanation={video.explanation}
-            key={index}
-          />
-        ))}
-      </div>
+        <div className="youtube-videos-container">
+          {videosList.map((video, index) => (
+            <YouTubeVideo
+              videoId={video.id}
+              strategyExplanation={video.explanation}
+              key={index}
+            />
+          ))}
+        </div>
       </Container>
       {/* <Timer /> Include the Timer component within the Study component */}
     </div>

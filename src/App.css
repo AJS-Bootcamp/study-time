@@ -1,6 +1,15 @@
+html {
+  background-color: #0e122c;
+}
+
+#root {
+  background-color: #0e122c;
+  color: white;
+}
+
 body {
-  background-image: linear-gradient(to bottom, #0aafb5, #a8dadc 50%, #457b9d 50%, #457b9d 100%, );
   font-family: 'Open Sans', sans-serif;
+  background-color: #0e122c;
 }
 
 h1,
@@ -31,10 +40,17 @@ h2 {
 }
 
 .site-footer {
-  background-color: #0d0d0d;
-  background-image: linear-gradient(to right, #d4d3d5, #4f5264);
+  /* background-color: #eb0202; */
+  background-image: linear-gradient(to right, #d4d3d5, #0e122c);
   margin-bottom: 2rem;
   min-height: 8rem;
+}
+
+.footer {}
+
+/*Footer links*/
+nav .navbar-nav li a {
+  color: white !important;
 }
 
 .navbar-brand {
@@ -84,7 +100,7 @@ h2 {
   align-items: center;
   padding: 10px 20px;
   font-weight: bold;
-  background-image: linear-gradient(to left, #908e93, #4f5264);
+  background-image: linear-gradient(to left, #908e93, #abb0cf);
   color: #faeded;
   /* Darker text color JUST ADDED */
 
@@ -119,7 +135,7 @@ h2 {
   /* Lighter background color */
   color: #faeded;
   /* Darker text color */
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,11 +146,12 @@ h2 {
   list-style: none;
   display: flex;
   gap: 20px;
+  padding: 0px 20px;
 }
 
 .navbar li,
 .footer-links li {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* Style the links on hover */
@@ -151,7 +168,7 @@ h2 {
 /* Add blue color and underline on hover */
 .navbar a:hover,
 .footer-links a:hover {
-  color: #007bff;
+  color: #d4be1b;
   /* Blue color */
   text-decoration: underline;
 }
@@ -186,10 +203,25 @@ h2 {
   margin-top: 10px;
 }
 
+/*footer*/
+.list-unstyled {
+  display: flex;
+  flex-direction: column;
+  color: #ed0707;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 
+.social-icon {
+  margin-right: 10px;
+
+}
 
 /* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .youtube-video {
     background-color: blue;
   }
@@ -199,10 +231,10 @@ h2 {
     height: 100%;
 
   }
-}
+} */
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .youtube-video {
     background-color: olive;
     width: 30em;
@@ -215,4 +247,4 @@ h2 {
     background-color: rgb(223, 24, 6);
 
   }
-}
+} */

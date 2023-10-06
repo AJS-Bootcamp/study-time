@@ -34,7 +34,7 @@ const SideBar = () => {
 
   useEffect(() => {
     const percentage = calculateCompletionPercentage(items);
-    setCompletionPercentage(percentage);
+    setCompletionPercentage(percentage.toFixed(2));
   }, [items]); // Recalculate percentage whenever items change
 
   return (

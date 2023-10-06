@@ -225,7 +225,7 @@ nav .navbar-nav li a {
 }
 
 /*footer*/
-.list-unstyled {
+/* .list-unstyled {
   display: flex;
   flex-direction: column;
   color: #ed0707;
@@ -234,7 +234,7 @@ nav .navbar-nav li a {
   padding: 0;
   list-style: none;
   text-decoration: none;
-}
+} */
 
 .social-icon {
   margin-right: 10px;

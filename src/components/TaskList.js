@@ -1,10 +1,10 @@
 import React from "react";
-import { Button, Container, Row, Col } from "reactstrap";
+import { Button, List } from "reactstrap";
 
 const TaskList = ({ items, removeItem, completeTask }) => {
     return (
         <div>
-            <ul>
+            <List type="unstyled">
                 {items.map((item) => (
                     <Item
                         item={item}
@@ -13,39 +13,37 @@ const TaskList = ({ items, removeItem, completeTask }) => {
                         completeTask={completeTask}
                     />
                 ))}
-            </ul>
+            </List>
         </div>
     );
 };
 
 function Item({ item, removeItem, completeTask }) {
     return (
-        <li>
-            <Container>
-                <Row>
-                    <Col xs="3" sm="3">
+        <li className="d-flex justify-content-end m-2">
+
+                        <span className="list-item me-auto fs-5">{item.task}</span>
+
                         <Button
                             color="success"
                             outline
+                            size="sm"
+                            className="mx-2"
                             active={item.complete}
                             onClick={() => completeTask(item.id)}
                         >
-                            Complete
+                            Done
                         </Button>
-                    </Col>
-                    <Col xs="6" sm="6">
-                        <span className="list-item">{item.task}</span>
-                    </Col>
-                    <Col xs="3" sm="3">
+
                         <Button
                             color="danger"
+                            size="sm"
+                            className=""
                             onClick={() => removeItem(item.id)}
                         >
                             Delete
                         </Button>
-                    </Col>
-                </Row>
-            </Container>
+
         </li>
     );
 }

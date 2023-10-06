@@ -68,9 +68,26 @@ nav .navbar-nav li a {
 .navbar-dark {
   background-color: #0d0d0d;
   background-image: linear-gradient(to right, #979698, #4f5264);
-  margin-bottom: 2rem;
+
   min-height: 8rem;
   box-shadow: #0d0d0d;
+}
+
+.nav-container {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-link {
+  color: #0f0000;
+  background-color: #333;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  color: #e9d2d2;
+  text-decoration: underline;
 }
 
 .page-enter {
@@ -131,7 +148,8 @@ nav .navbar-nav li a {
 /* Header and Footer */
 .navbar,
 .footer {
-  background-color: #f5f5f5;
+  background-color: #333;
+
   /* Lighter background color */
   color: #faeded;
   /* Darker text color */
@@ -158,7 +176,8 @@ nav .navbar-nav li a {
 .navbar a,
 .footer-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
+
   /* Darker text color */
   transition: color 0.3s, text-decoration 0.3s;
   /* Add smooth transitions JUST ADDED*/
@@ -191,11 +210,13 @@ nav .navbar-nav li a {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border: solid red;
+  border: solid rgb(83, 83, 81);
+
+  
 }
 
 * {
-  border: solid red;
+  /* border: solid red; */
 }
 
 .strategy-explanation {
@@ -218,6 +239,21 @@ nav .navbar-nav li a {
 .social-icon {
   margin-right: 10px;
 
+}
+
+/*text hidden*/
+.show-text {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+  color: white;
+  background-color: black;
+  height: 30px;
+}
+
+.hide-text {
+  opacity: 0;
+
+  height: 0;
 }
 
 /* On screens that are 992px or less, set the background color to blue */

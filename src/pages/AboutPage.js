@@ -7,6 +7,8 @@ const AboutPage = () => {
     backgroundImage: `url(${studyImage})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+
+    marginTop: "20px",
   };
   return (
     <Container style={myStyle}>
@@ -21,8 +23,8 @@ const AboutPage = () => {
           src={LogoAJS}
           alt="Logo AJS"
         />
-        <h3 class="p-2 bg-light bg-opacity-50 text-dark">
-          Determine to discover effective methods to enhance your study skills
+        <h3 class="p-2 bg-light bg-opacity-50 text-dark ">
+          Determined to discover effective methods to enhance your study skills
           and optimize your learning experience.
         </h3>
         <p class="p-2 bg-light bg-opacity-50 text-dark">

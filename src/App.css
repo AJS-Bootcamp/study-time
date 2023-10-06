@@ -33,20 +33,24 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.row-content {
+.row-content-contact {
   padding: 50px 0;
   border-bottom: 1px ridge;
+  min-height: 200px;
+
+}
+
+.row-content {
+  padding: 50px 0;
   min-height: 200px;
 }
 
 .site-footer {
-  /* background-color: #eb0202; */
-  background-image: linear-gradient(to right, #d4d3d5, #0e122c);
   margin-bottom: 2rem;
   min-height: 8rem;
 }
 
-.footer {}
+
 
 /*Footer links*/
 nav .navbar-nav li a {
@@ -74,20 +78,23 @@ nav .navbar-nav li a {
 }
 
 .nav-container {
-  background-color: #333;
+ 
   padding: 10px;
 }
 
 .nav-link {
   color: #0f0000;
-  background-color: #333;
-  text-decoration: none;
+  background-color: #faf9f9;
+ 
   margin-right: 10px;
+
+  font-size: 2px;
 }
 
 .nav-link:hover {
-  color: #e9d2d2;
+  color: #ffffff;
   text-decoration: underline;
+
 }
 
 .page-enter {
@@ -111,7 +118,7 @@ nav .navbar-nav li a {
 }
 
 /* Common Styles for Header and Footer */
-.header-footer {
+/* .header-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,37 +126,43 @@ nav .navbar-nav li a {
   font-weight: bold;
   background-image: linear-gradient(to left, #908e93, #abb0cf);
   color: #faeded;
-  /* Darker text color JUST ADDED */
-
+  
+  border: solid #ff0080;
 }
 
 .header-footer .logo {
   font-size: 24px;
   color: #faeded;
-  /* Darker text color JUST ADDED */
 
+  border: solid #ff0080;
 }
 
 .header-footer .social-media {
   display: flex;
   gap: 10px;
+  border: solid #ff0080;
 }
 
 .header-footer .social-icon,
 .footer-links a {
   text-decoration: none;
   font-size: 18px;
-  /*color: #333; /* Darker text color */
-  color: #faeded;
-  /* Darker text color JUST ADDED */
 
-}
+  color: #faeded;
+
+  border: solid #ff0080;
+} */
 
 /* Header and Footer */
-.navbar,
-.footer {
-  background-color: #333;
+.header {
+  box-shadow: 0px 8px 20px #243dfe;
+}
 
+
+.navbar {
+  background-color: #333;
+  background: linear-gradient(120deg, #323b73, #373837, #243dfe);
+  background-color: #e04110;
   /* Lighter background color */
   color: #faeded;
   /* Darker text color */
@@ -159,24 +172,27 @@ nav .navbar-nav li a {
   align-items: center;
 }
 
+
 .navbar ul,
 .footer-links ul {
   list-style: none;
   display: flex;
   gap: 20px;
   padding: 0px 20px;
+  
 }
 
 .navbar li,
 .footer-links li {
   font-size: 20px;
+
 }
 
 /* Style the links on hover */
 .navbar a,
 .footer-links a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 
   /* Darker text color */
   transition: color 0.3s, text-decoration 0.3s;
@@ -186,10 +202,16 @@ nav .navbar-nav li a {
 
 /* Add blue color and underline on hover */
 .navbar a:hover,
-.footer-links a:hover {
-  color: #d4be1b;
+a:hover {
+  color: #5eec12;
   /* Blue color */
   text-decoration: underline;
+  background: linear-gradient(120deg, #5b0587, #ff0080, #ee3ce8);
+  /* background-size: 200% 200%; */
+  -webkit-background-clip: text;
+  
+  font-size: 1.9rem;
+  
 }
 
 .youtube-videos-container {
@@ -212,12 +234,12 @@ nav .navbar-nav li a {
   width: 100%;
   border: solid rgb(83, 83, 81);
 
-  
+
 }
 
-* {
-  /* border: solid red; */
-}
+/* * {
+  border: solid red; 
+} */
 
 .strategy-explanation {
   font-size: 16px;

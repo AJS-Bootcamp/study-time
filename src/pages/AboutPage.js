@@ -12,7 +12,7 @@ const AboutPage = () => {
   };
   return (
     <Container style={myStyle}>
-      <div class="d-flex flex-column gap-2 py-5 align-items-center  ">
+      <div class="d-flex flex-column gap-2 py-5 align-items-center text-center  ">
         <h3 class="font-weight-bold p-2 bg-light bg-opacity-50 text-dark">
           About Us
         </h3>

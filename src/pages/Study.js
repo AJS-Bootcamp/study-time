@@ -34,17 +34,17 @@ const videosList = [
   },
   {
     id: "tkm0TNFzIeg",
-    title: "Feyman Technique",
+    title: "Feynman Technique",
     explanation:
-      "The Feyman Technique is a study method that involves explaining a topic in simple terms as if teaching it to someone else. This process helps to indentify gaps in your understanding.",
+      "The Feynman Technique is a study method that involves explaining a topic in simple terms as if teaching it to someone else. This process helps to indentify gaps in your understanding.",
   },
 ];
 const Study = () => {
   return (
-    <div>
+    <div className="my-4">
       <h2>Study Strategies</h2>
       <Container fluid>
-        <div className="youtube-videos-container">
+        <div className="youtube-videos-container my-3">
           {videosList.map((video, index) => (
             <YouTubeVideo
               videoId={video.id}

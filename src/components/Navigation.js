@@ -3,24 +3,24 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
-    <div className="navbar">
+   <>
       <nav>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" className="fs-4">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/Study">Study</NavLink>
+            <NavLink to="/Study" className="fs-4">Study</NavLink>
           </li>
           <li>
-            <NavLink to="/AboutPage">About Us</NavLink>
+            <NavLink to="/AboutPage" className="fs-4">About Us</NavLink>
           </li>
           <li>
-            <NavLink to="/ContactPage">Contact Us</NavLink>
+            <NavLink to="/ContactPage" className="fs-4">Contact Us</NavLink>
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 }
 

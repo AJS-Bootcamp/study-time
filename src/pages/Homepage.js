@@ -26,11 +26,11 @@ function Homepage() {
           <Sidebar />
         </Col>
 
-        <Col sm="9">
+        <Col sm="9" className="justify-content-center align-items-center">
           <h3>Our Recommendation</h3>
           <div
             className="d-flex justify-content-center align-items-center"
-            style={{ height: "50vh", width: "100%" }}
+            style={{ height: "50vh", width: "100%", margin: "5px" }}
           >
             <div style={{ height: "50vh", width: "100vh" }}>
               {randomVideo ? (

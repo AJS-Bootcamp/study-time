@@ -24,20 +24,17 @@ function Header() {
           />
           <h1 className="mt-1">Study Time</h1>
         </NavbarBrand>
-        <div className="nav-container">
-          {" "}
-          <Navigation className="nav-link" />
-        </div>
+        {/* <div className="nav-container">
+          {" "} */}
+        <Navigation className="nav-link" />
+        {/* </div> */}
       </Navbar>
       <div
-        className={`text-center bg-dark ${
+        className={`text-center bg-info fs-5 ${
           showText ? "show-text" : "hide-text"
         }`}
       >
-        {/* <h8>
-          AJS Determine to enhance your study skills and optimize your learning
-          experience.
-        </h8> */}
+
         <Motivation />
       </div>
     </div>
